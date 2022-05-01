@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input ,EventEmitter,Output } from '@angular/core';
 
 @Component({
   selector: 'app-component2',
@@ -9,9 +9,11 @@ export class Component2Component implements OnInit {
   @Input() parentdata:any;
 
   constructor() { }
-  // @Output() event= new EventEmitter<string>()
+   @Output() event= new EventEmitter<string>()
 
   ngOnInit(): void {
   }
-
+   push(){
+     
+   }
 }

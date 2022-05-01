@@ -1,11 +1,11 @@
 
 #input{
   width: 100%;
-   height: 20px;
+   height: 30px;
 }
 select{
   width: 100%;
-  height: 30px;
+  height: 40px;
 }
 .btn{
   animation: ease-in-out;
@@ -33,4 +33,8 @@ border-radius: 20px;
  .btn {
       margin: auto;
   }
+}
+.fill:hover{
+  background-color: blueviolet;
+  color: aliceblue;
 }
