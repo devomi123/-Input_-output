@@ -9,11 +9,11 @@ export class Component2Component implements OnInit {
   @Input() parentdata:any;
 
   constructor() { }
-   @Output() event= new EventEmitter<string>()
+  //  @Output() event= new EventEmitter<string>()
 
   ngOnInit(): void {
   }
    push(){
-     
+
    }
 }

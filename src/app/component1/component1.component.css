@@ -38,3 +38,6 @@ border-radius: 20px;
   background-color: blueviolet;
   color: aliceblue;
 }
+select{
+  border-radius: 10px ;
+}
