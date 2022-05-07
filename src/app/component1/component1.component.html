@@ -3,7 +3,7 @@
     <div class="col-lg-12">
       <div class="row">
         <div class="col-lg-6">
-          <div class="fill" >
+          <div class="fill">
             <h1 class="text-center mt-4">Fill Your Information Here</h1>
             <br>
 
@@ -11,35 +11,46 @@
 
               <div>
                 <label>Name : </label>
-                <input  id="input"  class="form-control" [ngClass]="{'red':formdata.controls.name.invalid && formdata.controls.name.touched}" name="name" formControlName="name"  [(ngModel)]="name">
-                <span *ngIf="formdata.controls.name.invalid && formdata.controls.name.touched">Please enter valid name.</span>
+                <input id="input" class="form-control"
+                  [ngClass]="{'red':formdata.controls.name.invalid && formdata.controls.name.touched}" name="name"
+                  formControlName="name" [(ngModel)]="name">
+                <span *ngIf="formdata.controls.name.invalid && formdata.controls.name.touched">Please enter valid
+                  name.</span>
 
               </div>
 
               <br>
               <div>
                 <label>Email : </label>
-                <input id="input" class="form-control" [ngClass]="{'red':formdata.controls.email.invalid && formdata.controls.email.touched}" name="email" formControlName="email"  [(ngModel)]="email">
-                <span *ngIf="formdata.controls.email.invalid && formdata.controls.email.touched">Please enter valid email.</span>
+                <input id="input" class="form-control"
+                  [ngClass]="{'red':formdata.controls.email.invalid && formdata.controls.email.touched}" name="email"
+                  formControlName="email" [(ngModel)]="email">
+                <span *ngIf="formdata.controls.email.invalid && formdata.controls.email.touched">Please enter valid
+                  email.</span>
               </div>
               <br>
               <div>
                 <label>Mobile No. : </label>
-                <input id="input" class="form-control" [ngClass]="{'red':formdata.controls.mobileno.invalid && formdata.controls.mobileno.touched}" name="mobileno" formControlName="mobileno" [(ngModel)]="mobileno">
-                <span *ngIf="formdata.controls.mobileno.invalid && formdata.controls.mobileno.touched">Please enter valid mobileno.</span>
+                <input id="input" class="form-control"
+                  [ngClass]="{'red':formdata.controls.mobileno.invalid && formdata.controls.mobileno.touched}"
+                  name="mobileno" formControlName="mobileno" [(ngModel)]="mobileno">
+                <span *ngIf="formdata.controls.mobileno.invalid && formdata.controls.mobileno.touched">Please enter
+                  valid mobileno.</span>
 
               </div>
               <br>
               <div>
                 <label>Gender : </label>
-                <label><input class="radio" type="radio" name="gender" formControlName="gender" value="Male" [(ngModel)]="gender">Male</label>
+                <label><input class="radio" type="radio" name="gender" formControlName="gender" value="Male"
+                    [(ngModel)]="gender">Male</label>
 
-                <label><input class="radio" type="radio" name="gender" formControlName="gender" value="Female" [(ngModel)]="gender">Female</label>
+                <label><input class="radio" type="radio" name="gender" formControlName="gender" value="Female"
+                    [(ngModel)]="gender">Female</label>
               </div>
               <br>
               <div>
                 <label>Favorite Topic: </label>
-                <select  name="topic" id=""  formControlName="topic" [(ngModel)]="topic">
+                <select name="topic" id="" formControlName="topic" [(ngModel)]="topic">
                   <option value="">Select topic</option>
                   <option value="Bike">Bike</option>
                   <option value="Car">Car</option>
@@ -49,7 +60,7 @@
               </div>
               <br>
               <div>
-                <button class="btn btn-dark"  (click)="parentFunction()" type="submit">Submit</button>
+                <button class="btn btn-dark" (click)="parentFunction()" type="submit">Submit</button>
               </div>
             </div>
           </div>
@@ -64,6 +75,3 @@
   </div>
 
 </form>
-
-
-
