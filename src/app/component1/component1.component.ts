@@ -20,7 +20,7 @@ export class Component1Component implements OnInit {
     this.formdata = new FormGroup(
       {
          name: new FormControl("", Validators.compose([Validators.required])),
-        email:new FormControl("", Validators.compose([Validators.required, Validators.email ])),
+        email:new FormControl("", Validators.compose([Validators.required, Validators.pattern("[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}") ])),
       mobileno: new FormControl("",Validators.compose([Validators.required])),
       gender:new FormControl(),
       topic:new FormControl()

@@ -17,6 +17,8 @@
                 <span *ngIf="formdata.controls.name.invalid && formdata.controls.name.touched">Please enter valid
                   name.</span>
 
+
+
               </div>
 
               <br>
@@ -60,7 +62,7 @@
               </div>
               <br>
               <div>
-                <button class="btn btn-dark" (click)="parentFunction()" type="submit">Submit</button>
+                <button class="btn btn-dark" [disabled]="!formdata.valid" (click)="parentFunction()" type="submit">Submit</button>
               </div>
             </div>
           </div>
